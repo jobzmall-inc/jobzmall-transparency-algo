@@ -1,0 +1,11 @@
+[package]
+name = "jm-nutrition"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+jm-common.workspace = true
+
+[lints]
+workspace = true

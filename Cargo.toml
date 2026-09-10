@@ -1,0 +1,52 @@
+[workspace]
+resolver = "2"
+members = [
+    "common",
+    "params",
+    "kernel",
+    "extract",
+    "ghost",
+    "fraud",
+    "stale",
+    "nutrition",
+    "sources",
+    "enforcement",
+    "public-report",
+    "engine",
+    "label-mixer",
+]
+
+[workspace.package]
+version = "0.3.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "JobzMall Transparency Algorithm — warranted judgment compiler for listing provenance"
+authors = ["JobzMall"]
+
+[workspace.dependencies]
+jm-common = { path = "common" }
+jm-params = { path = "params" }
+jm-kernel = { path = "kernel" }
+jm-extract = { path = "extract" }
+jm-ghost = { path = "ghost" }
+jm-fraud = { path = "fraud" }
+jm-stale = { path = "stale" }
+jm-nutrition = { path = "nutrition" }
+jm-sources = { path = "sources" }
+jm-enforcement = { path = "enforcement" }
+jm-public-report = { path = "public-report" }
+jm-engine = { path = "engine" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "std", "serde"] }
+url = { version = "2", features = ["serde"] }
+regex = "1"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+todo = "deny"
+unimplemented = "deny"

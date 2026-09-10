@@ -1,0 +1,20 @@
+[package]
+name = "jm-engine"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+jm-common.workspace = true
+jm-params.workspace = true
+jm-kernel.workspace = true
+jm-extract.workspace = true
+jm-ghost.workspace = true
+jm-fraud.workspace = true
+jm-stale.workspace = true
+jm-sources.workspace = true
+jm-nutrition.workspace = true
+chrono.workspace = true
+
+[lints]
+workspace = true

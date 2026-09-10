@@ -1,0 +1,17 @@
+[package]
+name = "jm-sources"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+jm-common.workspace = true
+jm-params.workspace = true
+jm-kernel.workspace = true
+jm-extract.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true
+
+[lints]
+workspace = true
